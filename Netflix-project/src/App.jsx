@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-// import Home from './Pages/Home/Home'
+import Home from './Pages/Home/Home'
 import Header from './Commponents/Header/Header'
 import Footer from './Commponents/Footer/Footer'
 
@@ -10,9 +10,9 @@ function App() {
   return (
     
       <>
-          {/* <Home/> */}
-          <Header/>
-          <Footer/>
+          <Home/>
+          {/* <Header/> */}
+          {/* <Footer/> */}
           
       </>
 

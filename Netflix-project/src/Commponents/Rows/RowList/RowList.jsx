@@ -7,7 +7,7 @@ function RowList() {
     <>
         <Row
         title="NETFLIX ORIGINALS"
-        fetchurl={requests.fetchNetflixOriginals}
+        fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow={true}
         />
         <Row title="Trending Now" fetchUrl={requests.fetchTrending} />

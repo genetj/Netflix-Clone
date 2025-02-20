@@ -9,7 +9,7 @@ function Banner() {
     (async () => {
       try {
         const request = await axios.get(requests.fetchNetflixOriginals);
-        console.log(request);
+        // console.log(request);
         setMovie(
           request.data.results[
             Math.floor(Math.random() * request.data.results.length)
@@ -33,16 +33,14 @@ function Banner() {
         backgroundReapt: "no-repeat",
       }}
     >
-      <br /> <br /> <br /> <br />
-      <br />
-      <h1> hello </h1>
+    
       <div className="banner_content">
         <h1 className="banner_title">
           {movie?.title || movie?.name || movie?.original_name}
         </h1>
         <div className="banner_buttons">
           <button className="banner_button play">Play</button>
-          <button className="banner_button">My List</button>
+          <button className="banner_button Mylist">My List</button>
         </div>
         <h1 className="banner_description">{truncate(movie?.overview, 150)}</h1>
       </div>
